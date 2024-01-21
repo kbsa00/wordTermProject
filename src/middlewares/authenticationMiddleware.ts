@@ -1,0 +1,5 @@
+
+
+function checkAuthentication(apiKey: string){
+    
+}
