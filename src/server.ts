@@ -1,5 +1,5 @@
 import { app } from './middlewares/app';
-import { HealthRoutes } from './routes/Health/HealthRoutes';
+import { HealthRoutes } from './routes/Health/healthRoutes';
 import { DebugRoutes } from './routes/Health/debugRoutes';
 import { WordTermRoutes } from './routes/wordTermRoutes';
 import { WordItemService } from './services/wordTermService';

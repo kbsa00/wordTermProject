@@ -11,13 +11,14 @@ export function WordTermRoutes(
     //checkAuthentication,
     async (req: Request, res: Response) => {
       const data = await WorkItemService.getAllWorkItems();
+      console.log('data', data.length);
       res.status(200).json(data);
     },
   );
 
   app.get(
     '/api/begrep/:id',
-    //checkAuthentication,
+    //checkAuthentication, commented out for now.
     async (req: Request, res: Response) => {
       const id = req.params.id;
       const workItem = await WorkItemService.getWorkItemById(id);
