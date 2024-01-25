@@ -45,7 +45,7 @@ function extractAltLabels(
 function extractDefinition(definition: any | null): Definition {
   return {
     tekst: {
-      nn: definition.text.nb || null,
+      nn: definition.text.nn || null,
       nb: definition.text.nb || null,
       en: definition.text.en || null,
     },
